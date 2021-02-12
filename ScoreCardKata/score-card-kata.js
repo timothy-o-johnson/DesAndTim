@@ -20,7 +20,9 @@ class scoreCard {
   scoreTeamB2 () {
       this.teamBScore = this.teamBScore + 2
   }
-  scoreTeamB3 () {}
+  scoreTeamB3 () {
+      this.teamBScore = this.teamBScore + 3
+  }
 
   getScore () {
     var score = `00${this.teamAScore}:00${this.teamBScore}`
