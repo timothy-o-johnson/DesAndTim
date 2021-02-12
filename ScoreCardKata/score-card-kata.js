@@ -10,7 +10,9 @@ class scoreCard {
   scoreTeamA2 () {
       this.teamAScore = this.teamAScore + 2
   }
-  scoreTeamA3 () {}
+  scoreTeamA3 () {
+    this.teamAScore = this.teamAScore + 3
+  }
   scoreTeamB1 () {}
   scoreTeamB2 () {}
   scoreTeamB3 () {}
