@@ -10,7 +10,7 @@ class scoreCard {
  scoreTeamB1() {}
  scoreTeamB2() {}
  scoreTeamB3() {}
- getScore() {}
+ getScore() {return "000:000"}
 
 
 }
