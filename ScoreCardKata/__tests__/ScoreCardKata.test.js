@@ -33,3 +33,9 @@ test(' 4. scoreTeamA3() should add 3 points to the first teams total', () => {
   expect(scoreCardTest.getScore()).toBe('006:000')
 }
 )
+
+test(' 5. scoreTeamB1() should add 1 point to the second teams total',() =>{
+  scoreCardTest.scoreTeamB1()
+  expect(scoreCardTest.getScore()).toBe('006:001')
+}
+)
