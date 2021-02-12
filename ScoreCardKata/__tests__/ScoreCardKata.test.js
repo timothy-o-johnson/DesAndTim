@@ -23,17 +23,3 @@ test(' 2. scoreTeamA1() should add 1 point to the first teams total', () => {
   expect(scoreCardTest.getScore()).toBe('001:000')
 })
 
-// class someClass {
-//   constructor() {
-
-//   }
-
-//   helloWorld(){
-//     console.log('hello world!')
-
-//   }
-// }
-
-// var someClass1 = new someClass()
-
-// someClass1.helloWorld()
