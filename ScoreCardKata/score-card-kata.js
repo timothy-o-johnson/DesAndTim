@@ -7,7 +7,6 @@ class scoreCard {
   scoreTeamA1 () {
     this.teamAScore = this.teamAScore + 1
   }
-
   scoreTeamA2 () {
     this.teamAScore = this.teamAScore + 2
   }
@@ -25,14 +24,13 @@ class scoreCard {
   }
 
   getScore () {
-    var teamAScore = `${this.teamAScore}`
-    var teamBScore = `${this.teamBScore}`
+    var teamAScore = this.getTeamScore(`${this.teamAScore}`)
+    var teamBScore = this.getTeamScore(`${this.teamBScore}`)
 
     var score = `${teamAScore}:${teamBScore}`
 
     return score
   }
-
   getTeamScore (score) {
     var teamScore
 
@@ -50,7 +48,6 @@ class scoreCard {
     if (score.length === 1) {
       teamScore = '00' + score
     }
-
     return teamScore
   }
 }

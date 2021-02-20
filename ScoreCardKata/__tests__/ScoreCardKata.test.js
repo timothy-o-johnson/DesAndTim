@@ -58,7 +58,7 @@ test(' 8. if a team has double digit scores the score should still be 7 digits (
   expect(scoreCardTest.getScore()).toBe('012:011')
 })
 
-test.only(' 9. if a team has single digit scores it should have two leading 0s, if team has double-digit score should have one leading 0, and if triple digit should have no leading zeros', () => {
+test(' 9. if a team has single digit scores it should have two leading 0s, if team has double-digit score should have one leading 0, and if triple digit should have no leading zeros', () => {
   expect(scoreCardTest.getTeamScore('123')).toBe('123')
   expect(scoreCardTest.getTeamScore('28')).toBe('028')
   expect(scoreCardTest.getTeamScore('4')).toBe('004')
