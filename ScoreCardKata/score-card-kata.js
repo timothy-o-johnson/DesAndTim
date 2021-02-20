@@ -24,14 +24,15 @@ class scoreCard {
   }
 
   getScore () {
-    var teamAScore = this.getTeamScore(`${this.teamAScore}`)
-    var teamBScore = this.getTeamScore(`${this.teamBScore}`)
+    var teamAScore = this.formatScore(`${this.teamAScore}`)
+    var teamBScore = this.formatScore(`${this.teamBScore}`)
 
     var score = `${teamAScore}:${teamBScore}`
 
     return score
   }
-  getTeamScore (score) {
+  
+  formatScore (score) {
     var teamScore
 
     // if score triple-digits get zero 0s
