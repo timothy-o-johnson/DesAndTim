@@ -35,7 +35,8 @@ function getScore (m_score1, m_score2) {
     } else {
       score = 'Win for player2'
     }
-  } else {
+  } //
+  else {
     for (var i = 1; i < 3; i++) {
       if (i === 1) {
         tempScore = m_score1
