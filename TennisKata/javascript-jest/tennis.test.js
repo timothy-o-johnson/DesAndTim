@@ -55,7 +55,7 @@ describe('getScore1', () => {
       expect(getScore1(p1, p2)).toEqual(expected)
     })
   })
-  it.todo('rename parameters')
+  it.todo('rename parameters ')
 })
 
 describe('getScore2', () => {
