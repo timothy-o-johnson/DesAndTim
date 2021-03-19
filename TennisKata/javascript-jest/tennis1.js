@@ -29,22 +29,23 @@ function getScore (player_score1, player_score2) {
   } else if (player_score1 >= 4 || player_score2 >= 4) {
     // If one or the other has a score higher or equal to 4
     // Find the difference between the 2 scores
-    var minusResult = player_score1 - player_score2
+    // var minusResult = player_score1 - player_score2
     // If Player 1 has 1 point lead then the score is "Advantage", if the lead is 2 points then player 1 win. Same for player 2 but with -1 and if its anything else, player 2 wins
-    if (minusResult === 1) {
-      score = 'Advantage player1'
-    } else if (minusResult === -1) {
-      score = 'Advantage player2'
-    } else if (minusResult >= 2) {
-      score = 'Win for player1'
-    } else {
+
+    // player1_score = 6
+    // player2_score = 4
+
+    if (player_score1 >= player_score2 + 2){
+       score = 'Win for player1'
+    } else if(player_score2 >= player_score1 + 2){
       score = 'Win for player2'
-    }
-  } // if not a tie and the players have less than 4 points... then build score
-  else {
-    
+    } else if (player_score1 > player_score2) {
+      score = 'Advantage player1'
+    } else if (player_score1 < player_score2) {
+      score = 'Advantage player2'
+    } 
   }
-  
+
   return score
 
   function takePointsAndConvertToText (playerScore) {

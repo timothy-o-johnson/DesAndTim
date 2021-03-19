@@ -52,6 +52,9 @@ describe('getScore1', () => {
       var p1 = entry[0]
       var p2 = entry[1]
       var expected = entry[2]
+
+      console.log(`p1: ${p1}, p2: ${p2}`)
+      
       expect(getScore1(p1, p2)).toEqual(expected)
     })
   })
